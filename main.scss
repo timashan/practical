@@ -64,6 +64,31 @@ main {
   letter-spacing: 1rem;
   display: inline-block;
   color: $color-white;
+  animation: rotate 15s infinite 5s;
+  animation-fill-mode: backwards;
+  perspective: 100rem;
+
+  &:hover {
+    transform: translateX(2rem);
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    color: $color-dark;
+    background-color: $color-white;
+  }
+
+  20% {
+    transform: rotateY(1turn);
+    color: $color-white;
+    background-color: $color-dark;
+  }
+
+  100% {
+    transform: rotateY(1turn);
+  }
 }
 
 .practical {

@@ -48,7 +48,24 @@ main {
   background-color: #444;
   letter-spacing: 1rem;
   display: inline-block;
-  color: #fff; }
+  color: #fff;
+  animation: rotate 15s infinite 5s;
+  animation-fill-mode: backwards;
+  perspective: 100rem; }
+  .heading-secondary:hover {
+    transform: translateX(2rem);
+    transform: rotateY(180deg); }
+
+@keyframes rotate {
+  0% {
+    color: #444;
+    background-color: #fff; }
+  20% {
+    transform: rotateY(1turn);
+    color: #fff;
+    background-color: #444; }
+  100% {
+    transform: rotateY(1turn); } }
 
 .practical__list {
   list-style: none; }

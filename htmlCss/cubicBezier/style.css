@@ -1,0 +1,9 @@
+h1 {
+  animation: moveAnim 3s cubic-bezier(0.83, 0, 0.17, 1) infinite;
+}
+
+@keyframes moveAnim {
+  100% {
+    transform: translateX(80%);
+  }
+}
