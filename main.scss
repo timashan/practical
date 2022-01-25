@@ -11,20 +11,67 @@ html {
 }
 
 $color-dark: #444;
-$color-white: #fff;
+$color-white: #f7f7f7;
+$color-red: #fa5252;
+$color-blue: #4c6ef5;
 
 body {
+  background-color: $color-white;
   font-family: sans-serif;
   box-sizing: border-box;
-
   font-size: 2rem;
   color: $color-dark;
-  min-height: 100vh;
-  border-left: 4rem solid $color-dark;
+}
+
+.navigation {
+  height: 100%;
+  width: 10rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+
+  &:hover + main {
+    border-left: 20rem solid $color-dark;
+  }
 }
 
 main {
-  border-left: 8rem solid $color-dark;
+  border-left: 10rem solid $color-dark;
+  min-height: 100vh;
+  transition: all 0.5s 0.2s;
+}
+
+.overlay-1 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: $color-red;
+  clip-path: polygon(30% 50%, 140% 100%, 0 100%);
+  animation: moveObjects 20s ease-in-out infinite;
+}
+
+.overlay-2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background-color: $color-blue;
+  clip-path: polygon(100% 20%, 100% 100%, 0 100%);
+  z-index: -1;
+  animation: moveObjects 15s infinite;
+}
+
+@keyframes moveObjects {
+  50% {
+    transform: translate(10%);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .u__margin-top--small {
@@ -65,17 +112,11 @@ main {
   display: inline-block;
   color: $color-white;
   animation: rotate 15s infinite 5s;
-  animation-fill-mode: backwards;
   perspective: 100rem;
-
-  &:hover {
-    transform: translateX(2rem);
-    transform: rotateY(180deg);
-  }
 }
 
 @keyframes rotate {
-  0% {
+  5% {
     color: $color-dark;
     background-color: $color-white;
   }
