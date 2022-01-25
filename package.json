@@ -1,0 +1,22 @@
+{
+  "name": "practical",
+  "version": "1.0.0",
+  "description": "practicals",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timashan/practical.git"
+  },
+  "author": "Timashan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timashan/practical/issues"
+  },
+  "homepage": "https://github.com/timashan/practical#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

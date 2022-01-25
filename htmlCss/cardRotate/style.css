@@ -1,0 +1,34 @@
+.card {
+  height: 20rem;
+  width: 15rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+
+.card__side {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: all 0.8s ease;
+}
+
+.card__side--front {
+  background-color: red;
+}
+
+.card__side--back {
+  background-color: blue;
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
