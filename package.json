@@ -2,9 +2,13 @@
   "name": "practical",
   "version": "1.0.0",
   "description": "testing/practicals",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d .."
   },
   "author": "Timashan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
