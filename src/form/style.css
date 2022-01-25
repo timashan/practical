@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: cursive;
+  font-size: 24px;
+  color: red;
+}
+
+.form1 input {
+  font-family: inherit;
+  font-size: 24px;
+  color: inherit;
+}
+
+.form1 input::placeholder {
+  color: #aaa;
+}
+
+.form1 input:focus {
+  border-bottom: 10px solid green;
+}
+
+.form1 input:focus:invalid {
+  border-bottom: 10px solid red;
+}
+
+.form1 input:placeholder-shown + label {
+  opacity: 0;
+}
+
+.radio_btns label {
+  display: inline-flex;
+}
+
+.radio_btns input {
+  display: none;
+}
+
+.radio_btns span {
+  height: 2rem;
+  width: 2rem;
+  border: 3px solid red;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.radio_btns span::after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: red;
+  opacity: 0;
+}
+
+.radio_btns input:checked + label span::after {
+  opacity: 1;
+}
