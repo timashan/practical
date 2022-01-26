@@ -1,14 +1,22 @@
-body {
-  height: 100vh;
+div {
+  height: 0.5rem;
+  width: 8rem;
+  background-color: black;
+  margin: 15rem auto;
+
+  animation: 1s rotate linear infinite;
 }
 
-#popup {
-  height: 50%;
-  width: 50%;
-  background-color: red;
-  display: none;
+.left {
+  transform-origin: left;
 }
 
-#popup:target {
-  display: block;
+.right {
+  transform-origin: right;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
 }
