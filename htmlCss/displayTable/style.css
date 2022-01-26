@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+
+.col-1 {
+  display: table-cell;
+  background-color: red;
+  width: 33.333333%;
+}
+
+.col-2 {
+  display: table-cell;
+  background-color: blue;
+}
+
+.col-1-row {
+  height: 50%;
+  background-color: yellow;
+}

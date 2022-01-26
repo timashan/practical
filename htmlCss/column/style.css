@@ -1,0 +1,6 @@
+p {
+  width: 25%;
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 2px solid #ddd;
+}
