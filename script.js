@@ -28,6 +28,7 @@ const getGIT = async function () {
       .map((el) => el.path)
       .filter((el) => el.includes("htmlCss") && el.split("/").length === 2);
 
+    practialList.textContent = "";
     paths.forEach((path) => queryGenerator(path));
   } catch (err) {
     console.error(err);
