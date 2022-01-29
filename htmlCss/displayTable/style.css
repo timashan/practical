@@ -8,6 +8,7 @@ body {
   display: table-cell;
   background-color: red;
   width: 33.333333%;
+  vertical-align: middle;
 }
 
 .col-2 {
