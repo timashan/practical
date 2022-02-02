@@ -1,0 +1,15 @@
+.containers {
+  width: 500px;
+  height: 500px;
+  font-size: 40px;
+  background-color: #ebebeb;
+
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.containers > * {
+  background-color: yellow;
+}

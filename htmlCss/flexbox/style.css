@@ -1,0 +1,49 @@
+.containers {
+  width: 1000px;
+  font-size: 30px;
+  background-color: #ebebeb;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px; /* margin-left: 30px; */
+}
+
+.container {
+  /* 
+  DEFAULTS
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto; 
+
+  flex: 1; means flex 1 1 0;*/
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  flex: 1 0 100px; /*short hand flex*/
+}
+
+.c1 {
+  background-color: red;
+  align-self: stretch;
+  order: 1;
+}
+.c2 {
+  background-color: #4a4aff;
+  height: 250px;
+  order: -1;
+}
+.c3 {
+  background-color: yellow;
+  align-self: flex-start;
+}
+.c4 {
+  background-color: green;
+  flex-grow: 3;
+}
+.c5 {
+  background-color: rgb(184, 34, 184);
+}
+.c6 {
+  background-color: orangered;
+}
