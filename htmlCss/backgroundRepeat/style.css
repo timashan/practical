@@ -1,0 +1,5 @@
+body {
+  background-image: linear-gradient(red, blue);
+  background-repeat: no-repeat;
+  stroke: black;
+}

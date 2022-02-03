@@ -44,3 +44,23 @@ const queryGenerator = function (paths) {
 };
 
 getGIT();
+
+const heading = document.querySelector(".heading-primary");
+const headingChar = [...heading.textContent].slice(1);
+
+const headingType = function () {
+  setInterval(type, 15000);
+};
+
+const type = function () {
+  heading.textContent = "P";
+  let count = 0;
+  const interval = setInterval(() => {
+    if (count >= headingChar.length) return clearInterval(interval);
+
+    heading.textContent += headingChar[count];
+    count++;
+  }, 400);
+};
+
+headingType();

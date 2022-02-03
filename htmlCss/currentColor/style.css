@@ -1,0 +1,8 @@
+a {
+  color: red;
+  border-bottom: 5px solid currentColor;
+}
+
+a:hover {
+  color: blueviolet;
+}
