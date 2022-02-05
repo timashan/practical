@@ -1,0 +1,12 @@
+img {
+  height: 10rem;
+  width: 10rem;
+  /* background-image: url("../../src/chevron-thin-right.svg");
+  background-size: cover; */
+
+  background-color: red;
+  -webkit-mask-image: url("../../src/chevron-thin-right.svg");
+  mask-image: url("../../src/chevron-thin-right.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}

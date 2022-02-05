@@ -38,7 +38,7 @@ body {
 
 main {
   border-left: 10rem solid $color-dark;
-  min-height: 100vh;
+  height: 100vh;
   transition: all 0.5s 0.2s;
 }
 
@@ -171,6 +171,8 @@ main {
 }
 
 .practical {
+  overflow-y: scroll;
+  height: 75%;
   &__list {
     list-style: none;
     display: flex;
