@@ -1,0 +1,37 @@
+.container {
+  font-size: 30px;
+  color: #eee;
+  background-color: currentColor;
+  width: 60%;
+  height: 500px;
+  gap: 50px;
+
+  display: grid;
+  grid-template-columns: min-content 1fr minmax(200px, 300px) max-content;
+  grid-template-rows: minmax(200px, min-content) min-content;
+}
+
+.item--1 {
+  background-color: red;
+}
+.item--2 {
+  background-color: #4a4aff;
+}
+.item--3 {
+  background-color: yellowgreen;
+}
+.item--4 {
+  background-color: green;
+}
+.item--5 {
+  background-color: rgb(184, 34, 184);
+}
+.item--6 {
+  background-color: orangered;
+}
+.item--7 {
+  background-color: darkslategray;
+}
+.item--8 {
+  background-color: rosybrown;
+}

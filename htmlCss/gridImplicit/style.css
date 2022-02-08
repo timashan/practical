@@ -1,0 +1,24 @@
+.container {
+  font-size: 2rem;
+  height: 50rem;
+  width: 50rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+
+  grid-auto-rows: 2fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 0.5fr;
+}
+
+.ex {
+  background-color: red;
+  color: white;
+}
+
+.im {
+  background-color: blue;
+  color: white;
+}

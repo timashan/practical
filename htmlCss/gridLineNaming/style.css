@@ -1,0 +1,32 @@
+.container {
+  font-size: 2rem;
+  height: 50rem;
+  width: 50rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-rows: [header-start] 1fr [header-end box-start] 2fr [box-end main-start] 4fr [main-end footer-start] 1fr [footer-end];
+  grid-template-columns: repeat(3, [col-start] 1fr [col-end]) 0.5fr [grid-end];
+  gap: 1rem;
+}
+
+.container > * {
+  background-color: red;
+  color: white;
+}
+
+.head {
+  grid-column: col-start 1 / grid-end;
+}
+
+.side {
+  grid-row: box-start/main-end;
+  grid-column: col-end 3 / grid-end;
+}
+
+.main {
+  grid-column: col-start 1 / col-end 3;
+}
+
+.foot {
+  grid-column: col-start 1 / grid-end;
+}

@@ -1,0 +1,49 @@
+.container {
+  font-size: 2rem;
+  height: 50rem;
+  width: 50rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-rows: 1fr 2fr 4fr 1fr;
+  grid-template-columns: repeat(3, 1fr) 0.5fr;
+  gap: 1rem;
+
+  grid-template-areas:
+    ". head head ."
+    "box-1 box-2 box-3 side"
+    "main main main side"
+    "foot foot foot foot";
+}
+
+.container > * {
+  background-color: red;
+  color: white;
+}
+
+.head {
+  grid-area: head;
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+
+.side {
+  grid-area: side;
+}
+
+.main {
+  grid-area: main;
+}
+
+.foot {
+  grid-area: foot;
+}
