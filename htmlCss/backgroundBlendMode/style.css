@@ -1,0 +1,7 @@
+.pic {
+  background-image: linear-gradient(red, blue), url(../../src/hero.jpg);
+  background-blend-mode: screen;
+  height: 20rem;
+  width: 20rem;
+  background-size: cover;
+}
