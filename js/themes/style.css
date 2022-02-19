@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #000;
+    --color-secondary: #fff;
+  }
+  
+  html {
+    background-color: var(--color-secondary);
+    transition: all 0.5s ease-in;
+  }
+  
+  html.dark {
+    --color-primary: #fff;
+    --color-secondary: #111;
+  }

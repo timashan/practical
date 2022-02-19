@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.empty {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.fill {
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+
+.hold {
+  border: 0.3rem solid white;
+}
+
+.hover {
+  border: 0.3rem dashed white;
+  background-color: #333;
+}
