@@ -25,11 +25,12 @@ const result4 = str4.match(rgx4);
 console.log(result4);
 
 //period means anything
-const str5 = "hum hug";
+const str5 = "hum hug"; //use \. for the dot
 const rgx5 = /hu./g;
 const result5 = str5.match(rgx5);
 console.log(result5);
 
+//character set
 const str6 = "big bag bbg";
 const rgx6 = /b[ai]g/g;
 const result6 = str6.match(rgx6);
@@ -46,6 +47,7 @@ const result8 = str8.match(rgx8);
 console.log(result8);
 
 //negated character sets
+//Match anything not in the set
 const str9 = "Hello World 12345";
 const rgx9 = /[^hel1-4]/gi;
 const result9 = str9.match(rgx9);
@@ -145,3 +147,16 @@ const str25 = "regex regex";
 const rgx25 = /(\w+)\s\1/;
 const result25 = str25.match(rgx25);
 console.log(result25);
+
+//replace
+const result26 = "hot dog".replace(/(\w+)\s(\w+)/, "$2 is $1");
+console.log(result26);
+
+//\.
+console.log(/\w+\.\w+/.test("web.com"));
+
+//word boundry(anchor)
+console.log("Ha HaHa".match(/\bHa/g));
+
+const rgx26 = /(he|she)/g;
+console.log("he".match(rgx26), "she".match(rgx26));
