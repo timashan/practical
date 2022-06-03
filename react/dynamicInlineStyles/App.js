@@ -6,7 +6,7 @@ const App = () => {
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    if (!enteredValue.trim().length) setIsValid(false);
+    if (!enteredValue.trim().length) return setIsValid(false);
   };
 
   const globalInpurChangeHandler = (e) => {
